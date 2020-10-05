@@ -3,6 +3,8 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager instance;
+
     [Header("Screens")]
     public GameObject startScreen;
     public GameObject introScreen;
@@ -20,9 +22,15 @@ public class GameManager : MonoBehaviour
     [Header("Game Turns")]
     //public Action newTurnStarted;
     //public int gameTurns;
-    public int currentTurn = 0;
+    public int currentTurn = -1;
 
     private GameObject currentScreen;
+
+    private void Awake()
+    {
+        if (instance == null)
+            instance = this;
+    }
 
 
     // Start is called before the first frame update
@@ -44,11 +52,13 @@ public class GameManager : MonoBehaviour
 
         designBoardBehaviour.ResetToggles();
         budgeter.ResetCounter();
-        currentTurn = 0;
+        currentTurn = -1;
     }
 
     public void GoToIntro()
     {
+        currentTurn++;
+
         startScreen.SetActive(false);
         introScreen.SetActive(true);
         designBoardScreen.SetActive(false);
@@ -62,7 +72,7 @@ public class GameManager : MonoBehaviour
 
     public void GoToDesignBoard()
     {
-        currentTurn++;
+
 
         startScreen.SetActive(false);
         introScreen.SetActive(false);

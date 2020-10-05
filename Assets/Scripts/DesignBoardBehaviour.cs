@@ -21,9 +21,9 @@ public class DesignBoardBehaviour : MonoBehaviour
             attendantToggles[i].isOn = false;
         }
 
-        for (int j = 0; j < activityToggles.Length; j++)
-        {
-            activityToggles[j].isOn = false;
-        }
+        //for (int j = 0; j < activityToggles.Length; j++)
+        //{
+        //    activityToggles[j].isOn = false;
+        //}
     }
 }
