@@ -8,16 +8,21 @@ public class GameManager : MonoBehaviour
     public GameObject introScreen;
     public GameObject designBoardScreen;
     public GameObject meetingScreen;
+    public GameObject recapScreen;
     public GameObject endScreen;
 
     [Header("Behaviour Control")]
     public BudgetCounter budgeter;
     public DesignBoardBehaviour designBoardBehaviour;
+    public Text clockHours;
+    public Text clockMins;
 
     [Header("Game Turns")]
-    public Text turnCounter;
-    public int gameTurns;
-    [SerializeField] private int currentTurn = 0;
+    //public Action newTurnStarted;
+    //public int gameTurns;
+    public int currentTurn = 0;
+
+    private GameObject currentScreen;
 
 
     // Start is called before the first frame update
@@ -26,19 +31,16 @@ public class GameManager : MonoBehaviour
         GoToStart();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void GoToStart()
     {
         startScreen.SetActive(true);
         introScreen.SetActive(false);
         designBoardScreen.SetActive(false);
         meetingScreen.SetActive(false);
+        recapScreen.SetActive(false);
         endScreen.SetActive(false);
+
+        currentScreen = startScreen;
 
         designBoardBehaviour.ResetToggles();
         budgeter.ResetCounter();
@@ -51,24 +53,26 @@ public class GameManager : MonoBehaviour
         introScreen.SetActive(true);
         designBoardScreen.SetActive(false);
         meetingScreen.SetActive(false);
+        recapScreen.SetActive(false);
         endScreen.SetActive(false);
+
+        currentScreen = introScreen;
+        UpdateClock();
     }
 
     public void GoToDesignBoard()
     {
         currentTurn++;
-        turnCounter.text = currentTurn.ToString("D2");
-        if (currentTurn > gameTurns)
-        {
-            GoToEnd();
-            return;
-        }
 
         startScreen.SetActive(false);
         introScreen.SetActive(false);
         designBoardScreen.SetActive(true);
         meetingScreen.SetActive(false);
+        recapScreen.SetActive(false);
         endScreen.SetActive(false);
+
+        currentScreen = designBoardScreen;
+        UpdateClock();
     }
 
     public void GoToMeeting()
@@ -77,9 +81,24 @@ public class GameManager : MonoBehaviour
         introScreen.SetActive(false);
         designBoardScreen.SetActive(false);
         meetingScreen.SetActive(true);
+        recapScreen.SetActive(false);
         endScreen.SetActive(false);
 
-        turnCounter.text = currentTurn.ToString("D2");
+        currentScreen = meetingScreen;
+        UpdateClock();
+    }
+
+    public void GoToRecap()
+    {
+        startScreen.SetActive(false);
+        introScreen.SetActive(false);
+        designBoardScreen.SetActive(false);
+        meetingScreen.SetActive(false);
+        recapScreen.SetActive(true);
+        endScreen.SetActive(false);
+
+        currentScreen = recapScreen;
+        UpdateClock();
     }
 
     public void GoToEnd()
@@ -88,6 +107,33 @@ public class GameManager : MonoBehaviour
         introScreen.SetActive(false);
         designBoardScreen.SetActive(false);
         meetingScreen.SetActive(false);
+        recapScreen.SetActive(false);
         endScreen.SetActive(true);
+
+        currentScreen = endScreen;
+    }
+
+    void UpdateClock()
+    {
+        if (currentScreen == introScreen)
+        {
+            clockHours.text = "08";
+            clockMins.text = Random.Range(34, 42).ToString();
+        }
+        else if (currentScreen == designBoardScreen)
+        {
+            clockHours.text = "10";
+            clockMins.text = Random.Range(19, 26).ToString();
+        }
+        else if (currentScreen == meetingScreen)
+        {
+            clockHours.text = "14";
+            clockMins.text = Random.Range(1, 4).ToString("D2");
+        }
+        else if (currentScreen == recapScreen)
+        {
+            clockHours.text = "17";
+            clockMins.text = Random.Range(43, 57).ToString();
+        }
     }
 }

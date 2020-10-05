@@ -5,9 +5,10 @@ using UnityEngine;
 [System.Serializable]
 public struct Idea
 {
-    [TextArea]
+    [TextArea(5,7)]
     public string idea;
     public string designDocEntry;
     public bool appealsToClient;
+    [TextArea(5,7)]
     public string clientResponse;
 }

@@ -65,12 +65,12 @@ public class BudgetLock : MonoBehaviour
 
     void CheckErrors()
     {
-        if (budgeter.currentBudget < 0)
-        {
-            GetComponent<Button>().interactable = false;
-            errorText.text = "Budget cannot be under 0";
-            return;
-        }
+        //if (budgeter.currentBudget < 0)
+        //{
+        //    GetComponent<Button>().interactable = false;
+        //    errorText.text = "Budget cannot be under 0";
+        //    return;
+        //}
         
         if (isAttendantMissing)
         {
@@ -79,12 +79,12 @@ public class BudgetLock : MonoBehaviour
             return;
         }
 
-        if (isActivityMissing)
-        {
-            GetComponent<Button>().interactable = false;
-            errorText.text = "At least 1 activity must be chosen";
-            return;
-        }
+        //if (isActivityMissing)
+        //{
+        //    GetComponent<Button>().interactable = false;
+        //    errorText.text = "At least 1 activity must be chosen";
+        //    return;
+        //}
 
         GetComponent<Button>().interactable = true;
         errorText.text = "";
