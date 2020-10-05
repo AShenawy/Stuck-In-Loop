@@ -18,6 +18,9 @@ public class DialogueBehaviour : MonoBehaviour
     public GameObject continueTextButton;
     public GameObject endScreenButton;
 
+    public delegate void DialogueEnded();
+    public event DialogueEnded onDialogueEnded;
+
     [SerializeField] private TMP_Text textDisplay;
     [SerializeField] private GameObject dialoguePanel;
 
@@ -27,8 +30,7 @@ public class DialogueBehaviour : MonoBehaviour
     private void Start()
     {
         //dialoguePanel.SetActive(false);
-        endScreenButton.SetActive(false);
-        continueTextButton.SetActive(true);
+        ResetButtons();
     }
 
     public void AdvanceDialogue()
@@ -78,5 +80,12 @@ public class DialogueBehaviour : MonoBehaviour
         //dialoguePanel.SetActive(false);
         endScreenButton.SetActive(true);
         continueTextButton.SetActive(false);
+        onDialogueEnded?.Invoke();
+    }
+
+    public void ResetButtons()
+    {
+        endScreenButton.SetActive(false);
+        continueTextButton.SetActive(true);
     }
 }
