@@ -56,6 +56,14 @@ public class GameManager : MonoBehaviour
 
     public void GoToDesignBoard()
     {
+        currentTurn++;
+        turnCounter.text = currentTurn.ToString("D2");
+        if (currentTurn > gameTurns)
+        {
+            GoToEnd();
+            return;
+        }
+
         startScreen.SetActive(false);
         introScreen.SetActive(false);
         designBoardScreen.SetActive(true);
@@ -65,13 +73,6 @@ public class GameManager : MonoBehaviour
 
     public void GoToMeeting()
     {
-        currentTurn++;
-        if (currentTurn > gameTurns)
-        {
-            GoToEnd();
-            return;
-        }
-
         startScreen.SetActive(false);
         introScreen.SetActive(false);
         designBoardScreen.SetActive(false);

@@ -708,9 +708,9 @@ RectTransform:
   m_Father: {fileID: 622139422}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 193.36734, y: -132.86833}
   m_SizeDelta: {x: 360.73468, y: 38.05555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &145172216
@@ -850,6 +850,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150646679}
   m_CullTransparentMesh: 0
+--- !u!1 &167025820
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 167025821}
+  m_Layer: 5
+  m_Name: Buttons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &167025821
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167025820}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1959606928}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &168903283
 GameObject:
   m_ObjectHideFlags: 0
@@ -1483,7 +1518,7 @@ RectTransform:
   - {fileID: 1872385019}
   - {fileID: 372786108}
   m_Father: {fileID: 1959606928}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1622,9 +1657,9 @@ RectTransform:
   m_Father: {fileID: 622139422}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 193.36734, y: -32.027775}
   m_SizeDelta: {x: 360.73468, y: 38.05555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &282625723
@@ -2184,9 +2219,9 @@ RectTransform:
   m_Father: {fileID: 622139422}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 193.36734, y: -435.39}
   m_SizeDelta: {x: 360.73468, y: 38.05555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &363519977
@@ -2575,9 +2610,9 @@ RectTransform:
   m_Father: {fileID: 1924558248}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 193.36734, y: -32.027775}
   m_SizeDelta: {x: 360.73468, y: 38.05555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &476353210
@@ -3485,7 +3520,7 @@ GameObject:
   - component: {fileID: 628197576}
   - component: {fileID: 628197577}
   m_Layer: 5
-  m_Name: Client
+  m_Name: Mad Investor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3523,10 +3558,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f743fab6f66964a96bd3c14d6c850b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attendantName: Mad Investor
   type: 5
   cost: 0
   isAttending: 0
   art: {fileID: 460589011}
+  ideationIdeas:
+  - idea: We noh, want to make a big business you know.
+    designDocEntry: Big Business
+    appealsToClient: 1
+    clientResponse: I said it so I like it.
+  - idea: We'd like to keep the budget of the marketing as low as possible.
+    designDocEntry: Low Budget
+    appealsToClient: 1
+    clientResponse: I said it so I like it.
+  - idea: We'd like to reach the biggest possible audience.
+    designDocEntry: Big Audience
+    appealsToClient: 1
+    clientResponse: I said it so I like it.
+  - idea: We'd like to reach out as fast as possible before our competitors finish
+      their devices.
+    designDocEntry: Do It Fast!
+    appealsToClient: 1
+    clientResponse: I said it so I like it.
+  targetIdeas:
+  - idea: We would like to promote this revolutionary traveling device to the widest
+      audience possible.
+    designDocEntry: Wide Audience
+    appealsToClient: 1
+    clientResponse: I said it so I like it.
+  storyIdeas:
+  - idea: Our story is... a youngster who always dreamt about traveling in time.
+    designDocEntry: Time Travel Dream
+    appealsToClient: 1
+    clientResponse: I said it so I like it.
+  artIdeas:
+  - idea: I have no preferences here.
+    designDocEntry: Open Style
+    appealsToClient: 1
+    clientResponse: I said it so I like it.
+  soundIdeas:
+  - idea: I have no preferences here.
+    designDocEntry: Open Style
+    appealsToClient: 1
+    clientResponse: I said it so I like it.
 --- !u!1 &649919033
 GameObject:
   m_ObjectHideFlags: 0
@@ -4245,9 +4320,9 @@ RectTransform:
   m_Father: {fileID: 622139422}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 193.36734, y: -233.7089}
   m_SizeDelta: {x: 360.73468, y: 38.05555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &891295734
@@ -4484,7 +4559,7 @@ GameObject:
   - component: {fileID: 936047180}
   - component: {fileID: 936047179}
   m_Layer: 5
-  m_Name: Button
+  m_Name: End Meeting Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4629,8 +4704,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.94, y: 0.94, z: 0.94}
-  m_Children:
-  - {fileID: 1688149022}
+  m_Children: []
   m_Father: {fileID: 1959606928}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4840,7 +4914,7 @@ GameObject:
   - component: {fileID: 976962397}
   - component: {fileID: 976962398}
   m_Layer: 5
-  m_Name: Team Member
+  m_Name: Vicky from Sales
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4878,10 +4952,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f743fab6f66964a96bd3c14d6c850b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attendantName: Vicky from Sales
   type: 0
   cost: 50
   isAttending: 0
   art: {fileID: 1435835303}
+  ideationIdeas:
+  - idea: We suggest to create the SWOT analysis for your product.
+    designDocEntry: SWOT Analysis
+    appealsToClient: 0
+    clientResponse: This is not needed.
+  - idea: We suggest to define your marketing scope.
+    designDocEntry: Scope Definition
+    appealsToClient: 0
+    clientResponse: This is too general.
+  - idea: We suggest to identify and analyze your competitors.
+    designDocEntry: Analyze Competitors
+    appealsToClient: 0
+    clientResponse: We already know our competitors.
+  targetIdeas:
+  - idea: We suggest to define your customer base and define the focus group.
+    designDocEntry: Assemble Focus Group
+    appealsToClient: 0
+    clientResponse: This is too general.
+  - idea: I suggest to provide this service for presenting the possibilities in the
+      future and getting the benefit today.
+    designDocEntry: Future Possibilities Today
+    appealsToClient: 0
+    clientResponse: This is our privilege.
+  storyIdeas:
+  - idea: I suggest to tell a story how your device can free us from our every day
+      stress. We can travel, eat, pray and love.
+    designDocEntry: Eat, Pray & Love
+    appealsToClient: 0
+    clientResponse: What rubbish is that?!
+  artIdeas:
+  - idea: I suggest Renaissance or Baroque style.
+    designDocEntry: Baroque Style
+    appealsToClient: 0
+    clientResponse: That's nice, but a tad too overwhelming.
+  soundIdeas:
+  - idea: I suggest salsa or bachata.
+    designDocEntry: Latin
+    appealsToClient: 0
+    clientResponse: This isn't a dance club.
 --- !u!1 &996312815
 GameObject:
   m_ObjectHideFlags: 0
@@ -4918,9 +5032,9 @@ RectTransform:
   m_Father: {fileID: 622139422}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 193.36734, y: -536.2306}
   m_SizeDelta: {x: 360.73468, y: 38.05555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &996312817
@@ -5145,7 +5259,7 @@ GameObject:
   - component: {fileID: 1024730289}
   - component: {fileID: 1024730290}
   m_Layer: 5
-  m_Name: Subcontractor
+  m_Name: Hinako Graphics Designer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5183,10 +5297,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f743fab6f66964a96bd3c14d6c850b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attendantName: Hinako Graphics Designer
   type: 4
   cost: 150
   isAttending: 0
   art: {fileID: 1000107157}
+  ideationIdeas:
+  - idea: I suggest to promote this device with the help of some computer simulation.
+    designDocEntry: Simulation
+    appealsToClient: 1
+    clientResponse: Good idea.
+  - idea: I suggest to make short videos of time trips to promote your service.
+    designDocEntry: Videos
+    appealsToClient: 1
+    clientResponse: Good idea.
+  - idea: I suggest to use your  device in movies and TV shows as product placement.
+      Whenever time traveling is part of the story it should be your device.
+    designDocEntry: Product Placement
+    appealsToClient: 1
+    clientResponse: Good idea.
+  - idea: I suggest to print fliers and throwing them out from airplanes.
+    designDocEntry: Fliers
+    appealsToClient: 0
+    clientResponse: This sounds so 19th century.
+  targetIdeas:
+  - idea: I would like to suggest this opportunity to those who want to fix some
+      mistakes they made in the past.
+    designDocEntry: Mistake Correctors
+    appealsToClient: 0
+    clientResponse: We won't allow people to change the history
+  storyIdeas:
+  - idea: I can make an manga style comics. We can publish them as a series of books.
+    designDocEntry: Comics
+    appealsToClient: 1
+    clientResponse: Sounds good.
+  artIdeas:
+  - idea: I suggest manga style.
+    designDocEntry: Manga Style
+    appealsToClient: 1
+    clientResponse: Sound good. Just make sure it's not Hentai.
+  - idea: I suggest 17th century Industrial Revolution style.
+    designDocEntry: Industrial Revolution Style
+    appealsToClient: 0
+    clientResponse: Is that even a style?
+  - idea: I suggest Steam Punk.
+    designDocEntry: Steam Punk Style
+    appealsToClient: 1
+    clientResponse: Sounds interesting.
+  soundIdeas:
+  - idea: "Let\u2019s use some folk music and remaster it."
+    designDocEntry: Remastered Folk Music
+    appealsToClient: 1
+    clientResponse: That's a good idea!
 --- !u!1 &1054263374
 GameObject:
   m_ObjectHideFlags: 0
@@ -6272,7 +6434,7 @@ MonoBehaviour:
   budgeter: {fileID: 190096409}
   designBoardBehaviour: {fileID: 1769582440}
   turnCounter: {fileID: 1955525914}
-  gameTurns: 3
+  gameTurns: 5
   currentTurn: 0
 --- !u!1 &1281094331
 GameObject:
@@ -6384,9 +6546,9 @@ RectTransform:
   m_Father: {fileID: 1924558248}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 193.36734, y: -232.02774}
   m_SizeDelta: {x: 360.73468, y: 38.05555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1327886638
@@ -6488,9 +6650,9 @@ RectTransform:
   m_Father: {fileID: 622139422}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 193.36734, y: -334.54944}
   m_SizeDelta: {x: 360.73468, y: 38.05555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1333717703
@@ -7023,7 +7185,7 @@ GameObject:
   - component: {fileID: 1435902957}
   - component: {fileID: 1435902958}
   m_Layer: 5
-  m_Name: End User 1
+  m_Name: Merje from Travel Agency
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7061,10 +7223,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f743fab6f66964a96bd3c14d6c850b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attendantName: Merje from Travel Agency
   type: 2
   cost: 100
   isAttending: 0
   art: {fileID: 150646681}
+  ideationIdeas:
+  - idea: We suggest to sell this as a service and not as a tool. You as a service
+      provider will have control and responsibility over time travelers.
+    designDocEntry: As a Service
+    appealsToClient: 1
+    clientResponse: I like that. We'd like to have control
+  targetIdeas:
+  - idea: I suggest to target this product to travelers - time trips!
+    designDocEntry: Travelers
+    appealsToClient: 1
+    clientResponse: Sounds good. Tell me more.
+  storyIdeas:
+  - idea: We suggest to focus on specific period of time. For example observe the
+      Big Bang.
+    designDocEntry: Big Bang
+    appealsToClient: 0
+    clientResponse: This is too long.
+  artIdeas:
+  - idea: "I suggest 60\u2019s hippie style. You know going to San Francisco and
+      other kind of acid trips."
+    designDocEntry: Hippie Style
+    appealsToClient: 0
+    clientResponse: "We don\u2019t sell drugs here."
+  soundIdeas:
+  - idea: We could use some unpublished and undiscovered music from the famous composers
+      like Mozart or Beethoven.
+    designDocEntry: Mozart or Beethoven
+    appealsToClient: 0
+    clientResponse: Classic music isn't for futuristic inventions
 --- !u!1 &1444724358
 GameObject:
   m_ObjectHideFlags: 0
@@ -7444,6 +7636,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1494898870}
+  - component: {fileID: 1494898871}
   m_Layer: 5
   m_Name: Dialogue
   m_TagString: Untagged
@@ -7471,6 +7664,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 232}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1494898871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494898869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 569bc647f59b61940a8c1ec2a9475f72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1713036533}
 --- !u!1 &1526269700
 GameObject:
   m_ObjectHideFlags: 0
@@ -8384,9 +8590,9 @@ RectTransform:
   m_Father: {fileID: 1924558248}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 193.36734, y: -432.0277}
   m_SizeDelta: {x: 360.73468, y: 38.05555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1649163643
@@ -8488,9 +8694,9 @@ RectTransform:
   m_Father: {fileID: 1924558248}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 193.36734, y: -332.0277}
   m_SizeDelta: {x: 360.73468, y: 38.05555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1679676229
@@ -8569,7 +8775,7 @@ GameObject:
   - component: {fileID: 1688149024}
   - component: {fileID: 1688149023}
   m_Layer: 5
-  m_Name: Design Access
+  m_Name: Design Options Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8582,17 +8788,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1688149021}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.93999994, y: 0.93999994, z: 0.93999994}
   m_Children:
   - {fileID: 919205130}
-  m_Father: {fileID: 953598572}
-  m_RootOrder: 0
+  m_Father: {fileID: 1959606928}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -50, y: -30}
+  m_AnchoredPosition: {x: -47.00002, y: -441.19998}
   m_SizeDelta: {x: 313.4593, y: 164.5857}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1688149023
@@ -8945,9 +9151,9 @@ RectTransform:
   m_Father: {fileID: 1924558248}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 193.36734, y: -132.02776}
   m_SizeDelta: {x: 360.73468, y: 38.05555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1748174670
@@ -9182,7 +9388,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1769582439
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10229,7 +10435,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1959606928
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10247,7 +10453,9 @@ RectTransform:
   - {fileID: 1799960738}
   - {fileID: 1494898870}
   - {fileID: 936047178}
+  - {fileID: 1688149022}
   - {fileID: 267767249}
+  - {fileID: 167025821}
   m_Father: {fileID: 1554091914}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10305,7 +10513,7 @@ GameObject:
   - component: {fileID: 1984699392}
   - component: {fileID: 1984699393}
   m_Layer: 5
-  m_Name: Expert
+  m_Name: The Professor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10343,10 +10551,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f743fab6f66964a96bd3c14d6c850b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attendantName: Professor
   type: 1
   cost: 200
   isAttending: 0
   art: {fileID: 2087160997}
+  ideationIdeas:
+  - idea: We need to present the test results scientific evidences about how this
+      thing works (how it is even possible!?)
+    designDocEntry: Scientific Evidence
+    appealsToClient: 0
+    clientResponse: This is our secret!
+  - idea: We need to present some security regulations how to avoid providing this
+      service for criminals?
+    designDocEntry: Security Regulations
+    appealsToClient: 0
+    clientResponse: We'll decide who can use this service.
+  - idea: Before we start promoting this service we need to check the legal aspects
+      of time traveling.
+    designDocEntry: Legal Aspects
+    appealsToClient: 0
+    clientResponse: There aren't regulations about time traveling yet.
+  - idea: I would like to see evidences that ensures this service is 100% safe.
+    designDocEntry: Safety Checks
+    appealsToClient: 0
+    clientResponse: Safety's our concern, not yours. Besides, this is classified
+      information.
+  targetIdeas:
+  - idea: This device should be  used first by very narrow group of professionals.
+    designDocEntry: Narrow User Group
+    appealsToClient: 0
+    clientResponse: This is not acceptable.
+  storyIdeas:
+  - idea: I suggest to present the development of this device by the series of scientific
+      articles.
+    designDocEntry: Scientific Articles
+    appealsToClient: 0
+    clientResponse: Too boring.
+  artIdeas:
+  - idea: I suggest ASCII style.
+    designDocEntry: ASCII Style
+    appealsToClient: 0
+    clientResponse: Are you mad? This is a time machine we're trying to sell, not
+      a typewriter!
+  soundIdeas:
+  - idea: "Let\u2019s use some MIDI tunes and loop them in endless variations."
+    designDocEntry: Chiptune
+    appealsToClient: 0
+    clientResponse: This is not a computer game we're trying to sell here!
 --- !u!1 &1985211670
 GameObject:
   m_ObjectHideFlags: 0
@@ -10806,7 +11058,7 @@ GameObject:
   - component: {fileID: 2111937642}
   - component: {fileID: 2111937643}
   m_Layer: 5
-  m_Name: End User 2
+  m_Name: Jose from TV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10844,10 +11096,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f743fab6f66964a96bd3c14d6c850b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attendantName: Jose from TV
   type: 3
   cost: 100
   isAttending: 0
   art: {fileID: 224249558}
+  ideationIdeas:
+  - idea: I suggest we will use your device in our next TV show in order to present
+      possibilities.
+    designDocEntry: TV Presentation
+    appealsToClient: 1
+    clientResponse: Sounds like a good idea!
+  - idea: We would like to use your device for recording events that took place in
+      history.
+    designDocEntry: Record History
+    appealsToClient: 0
+    clientResponse: This isn't marketing. This is business.
+  targetIdeas:
+  - idea: We suggest to target this product to our History Show audience.
+    designDocEntry: History lovers
+    appealsToClient: 0
+    clientResponse: Too narrow.
+  storyIdeas:
+  - idea: We suggest to promote your service with an historical event or process.
+    designDocEntry: Historical Process
+    appealsToClient: 0
+    clientResponse: Too much work.
+  artIdeas:
+  - idea: I suggest the mediaeval art stile. Romanic or Gothic. Dark streets, knights
+      and rats. Plague doctors with their masks.
+    designDocEntry: Mediaeval Art
+    appealsToClient: 0
+    clientResponse: Sounds interesting, but too dark.
+  soundIdeas:
+  - idea: We can use our History Show theme song for creating your product audio
+      signature.
+    designDocEntry: History Show Theme Song
+    appealsToClient: 0
+    clientResponse: We're not here to promote your show!
 --- !u!1 &2119855129
 GameObject:
   m_ObjectHideFlags: 0
