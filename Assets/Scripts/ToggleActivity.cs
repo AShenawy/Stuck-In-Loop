@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,7 +22,7 @@ public class ToggleActivity : MonoBehaviour
             startMeetingButton.CheckActivities();
         });
 
-        costDisplay.text = $"({activity.cost} €)";
+        costDisplay.text = $"({activity.cost} {CultureInfo.GetCultureInfo("et").NumberFormat.CurrencySymbol})";
     }
 
     void ChangeActivity(bool value)

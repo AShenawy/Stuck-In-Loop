@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,8 +16,13 @@ public class BudgetCounter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+    }
+
+    public void ResetCounter()
+    {
         currentBudget = startBudget;
-        budgetDisplay.text = currentBudget.ToString();
+        UpdateBudgetDisplay();
     }
 
     public void AdjustBudget(int cost, bool isUsed)
@@ -37,6 +43,6 @@ public class BudgetCounter : MonoBehaviour
 
     void UpdateBudgetDisplay()
     {
-        budgetDisplay.text = currentBudget.ToString();
+        budgetDisplay.text = currentBudget.ToString() + " " + CultureInfo.GetCultureInfo("et").NumberFormat.CurrencySymbol;
     }
 }
