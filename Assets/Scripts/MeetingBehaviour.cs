@@ -8,28 +8,29 @@ public class MeetingBehaviour : MonoBehaviour
     public int currentActivity;
     public MeetingStages meetingStage;
     public MeetingDialogue meetingDialogue;
+    public DialogueBehaviour dialogueBehaviour;
+
+    public delegate void StageChanged(MeetingStages newStage);
+    public event StageChanged onStageChanged;
 
     private void OnEnable()
     {
         currentActivity = 0;
         meetingStage = MeetingStages.Greeting;
-        
         AdvanceMeeting(meetingStage);
     }
 
-    private void OnDisable()
+    public void onDialogueEnded()
     {
-        
-    }
-
-    private void Start()
-    {
-        
-    }
-
-    void StartMeeting()
-    {
-
+        if (meetingStage == MeetingStages.Greeting)
+        {
+            meetingStage = MeetingStages.Ideation;
+            AdvanceMeeting(meetingStage);
+        }
+        else if (meetingStage == MeetingStages.Conclusion)
+        {
+            GameManager.instance.GoToRecap();
+        }
     }
 
     public void AdvanceMeeting(MeetingStages stage)
@@ -41,22 +42,27 @@ public class MeetingBehaviour : MonoBehaviour
                 break;
 
             case MeetingStages.Ideation:
+                currentActivity = 0;
                 meetingDialogue.DisplayIdeation();
                 break;
 
             case MeetingStages.TargetAudience:
+                currentActivity = 1;
                 meetingDialogue.DisplayTarget();
                 break;
 
             case MeetingStages.Story:
+                currentActivity = 2;
                 meetingDialogue.DisplayStory();
                 break;
 
             case MeetingStages.Art:
+                currentActivity = 3;
                 meetingDialogue.DisplayArt();
                 break;
 
             case MeetingStages.Music:
+                currentActivity = 4;
                 meetingDialogue.DisplaySound();
                 break;
 
@@ -71,6 +77,8 @@ public class MeetingBehaviour : MonoBehaviour
                 }
                 break;
         }
+
+        onStageChanged?.Invoke(stage);
     }
 }
 

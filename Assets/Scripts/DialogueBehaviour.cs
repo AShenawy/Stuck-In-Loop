@@ -30,7 +30,7 @@ public class DialogueBehaviour : MonoBehaviour
     private void Start()
     {
         //dialoguePanel.SetActive(false);
-        ResetButtons();
+        //ResetButtons();
     }
 
     public void AdvanceDialogue()
@@ -55,8 +55,7 @@ public class DialogueBehaviour : MonoBehaviour
         // Display the dialogue box and text
 
         dialoguePanel.SetActive(true);  // display the dialogue panel
-        continueTextButton.SetActive(true);
-        endScreenButton.SetActive(false);
+        ResetButtons();
         AdvanceDialogue();      // start going through the dialogue blocks
     }
 
@@ -68,6 +67,7 @@ public class DialogueBehaviour : MonoBehaviour
         {
             dialoguePanel.SetActive(true);  // display the dialogue panel
             dialoguePieces = new[] { inDialogue };
+            ResetButtons();
             AdvanceDialogue();
         }
     }
@@ -76,16 +76,16 @@ public class DialogueBehaviour : MonoBehaviour
     {
         // ends the dialogue and hides the dialogue box
         progressionIndex = 0;   // reset the index for the next dialogue interaction
-        Debug.Log("Dialogue has ended. Hiding Dialogue box");
+        //Debug.Log("Dialogue has ended. Hiding Dialogue box");
         //dialoguePanel.SetActive(false);
         endScreenButton.SetActive(true);
         continueTextButton.SetActive(false);
-        onDialogueEnded?.Invoke();
+        //onDialogueEnded?.Invoke();
     }
 
     public void ResetButtons()
     {
-        endScreenButton.SetActive(false);
         continueTextButton.SetActive(true);
+        endScreenButton.SetActive(false);
     }
 }
