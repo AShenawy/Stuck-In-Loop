@@ -443,7 +443,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 344.9, y: -13.999998}
+  m_AnchoredPosition: {x: 528.00006, y: -13.999998}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &35406413
@@ -2144,7 +2144,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 344.9, y: -13.999998}
+  m_AnchoredPosition: {x: 528, y: -13.999998}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &244215144
@@ -2850,7 +2850,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Subcontractor
+  m_Text: Hinako the Graphic Designer
 --- !u!222 &306244379
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3479,7 +3479,7 @@ MonoBehaviour:
   - 'You: Hi there and welcome to Creative Everything marketing agency. How can we
     help you today?'
   - 'Stranger: I am Ivan. In five seconds, you will get a text from your mother and
-    will be tempted to call back her and say: "Hi mum, I''ll call you later." But
+    will be tempted to call her back and say: "Hi mum, I''ll call you later." But
     you won''t call her because you will be wondering how I knew that was going to
     happen. Then, in another five seconds or so, it will start raining outside.'
   - 'You: Em... I beg your pardon?'
@@ -4960,7 +4960,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 915c31f77de4ddd45897045aa909ccd1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 04e346eea58816d44945627ce0c2be2a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8028,7 +8028,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 344.9, y: -13.999998}
+  m_AnchoredPosition: {x: 528.00006, y: -13.999998}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1054263376
@@ -8968,7 +8968,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: End User 1
+  m_Text: Merje from Travel Agency
 --- !u!222 &1142183094
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9658,7 +9658,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Expert
+  m_Text: Mark the Professor
 --- !u!222 &1230443682
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9978,6 +9978,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1271845298}
   - component: {fileID: 1271845299}
+  - component: {fileID: 1271845300}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -10022,6 +10023,102 @@ MonoBehaviour:
   clockHours: {fileID: 2037551004}
   clockMins: {fileID: 650536370}
   currentTurn: 0
+--- !u!82 &1271845300
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271845297}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4aac481e0990f2f4cb43d74159a28605, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.15
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1281094331
 GameObject:
   m_ObjectHideFlags: 0
@@ -10496,7 +10593,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 344.9, y: -13.999998}
+  m_AnchoredPosition: {x: 528.00006, y: -13.999998}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1347506690
@@ -13533,7 +13630,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: End User 2
+  m_Text: Jose from TV
 --- !u!222 &1700272229
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13871,7 +13968,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Team Member
+  m_Text: Vicky from Sales
 --- !u!222 &1763885210
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15455,7 +15552,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 78.629974, y: -642.5}
+  m_AnchoredPosition: {x: 87.57, y: -642.5}
   m_SizeDelta: {x: -193.11646, y: 77.66557}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1912722986
@@ -15938,7 +16035,7 @@ MonoBehaviour:
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'SOUND:'
@@ -15966,7 +16063,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1959606928
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16048,7 +16145,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 50.000015}
-  m_SizeDelta: {x: 441.68985, y: 590.5502}
+  m_SizeDelta: {x: 614.80774, y: 590.5502}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1979822517
 GameObject:
@@ -16273,7 +16370,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 344.9, y: -14}
+  m_AnchoredPosition: {x: 528.00006, y: -14}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1985211672

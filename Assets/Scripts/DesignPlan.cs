@@ -23,6 +23,7 @@ public class DesignPlan : MonoBehaviour, IPointerClickHandler
 
     private void OnEnable()
     {
+        ClearSummaries();
     }
 
     // Start is called before the first frame update

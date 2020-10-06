@@ -31,7 +31,7 @@ public class MeetingDialogue : MonoBehaviour
 
     public void DisplayStory()
     {
-        dialogueBehaviour.DisplayDialogue(greetingDialogue);
+        dialogueBehaviour.DisplayDialogue(storyDialogue);
     }
 
     public void DisplayArt()
