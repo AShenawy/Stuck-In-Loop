@@ -557,6 +557,136 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60781639}
   m_CullTransparentMesh: 0
+--- !u!1 &71698561
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 71698562}
+  - component: {fileID: 71698565}
+  - component: {fileID: 71698564}
+  - component: {fileID: 71698563}
+  m_Layer: 5
+  m_Name: Continue Text Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &71698562
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71698561}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 603841364}
+  m_Father: {fileID: 1605881661}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 765.79974, y: -184}
+  m_SizeDelta: {x: 312.25708, y: 97.24176}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &71698563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71698561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 71698564}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1406720221}
+        m_MethodName: AdvanceDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &71698564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71698561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &71698565
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71698561}
+  m_CullTransparentMesh: 0
 --- !u!1 &85875166
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,162 +903,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 88678260}
   m_CullTransparentMesh: 0
---- !u!1 &110736968
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 110736969}
-  - component: {fileID: 110736971}
-  - component: {fileID: 110736970}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &110736969
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 110736968}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1105023396}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 10}
-  m_SizeDelta: {x: 1306.2347, y: 393.45148}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &110736970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 110736968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: The game has ended.
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_outlineColor:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontSize: 42
-  m_fontSizeBase: 42
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 1
-  m_textAlignment: 264
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: -29.4
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
-  m_linkedTextComponent: {fileID: 0}
-  m_isLinkedTextComponent: 0
-  m_isTextTruncated: 0
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_ignoreRectMaskCulling: 0
-  m_ignoreCulling: 1
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_VertexBufferAutoSizeReduction: 1
-  m_firstVisibleCharacter: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_textInfo:
-    textComponent: {fileID: 110736970}
-    characterCount: 19
-    spriteCount: 0
-    spaceCount: 3
-    wordCount: 4
-    linkCount: 0
-    lineCount: 1
-    pageCount: 1
-    materialCount: 1
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
-  m_subTextObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &110736971
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 110736968}
-  m_CullTransparentMesh: 0
 --- !u!1 &117500259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,7 +1016,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1955.929, y: 1303.9526}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &119855714
 MonoBehaviour:
@@ -1057,13 +1031,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.14117648}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5db9fbda2f88e16498620cd999f39f3a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 092128d918ddbd24391aa99b84492272, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1279,8 +1253,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.5, y: -38.2}
-  m_SizeDelta: {x: 1915.9834, y: 348.36694}
+  m_AnchoredPosition: {x: 4.2, y: 0}
+  m_SizeDelta: {x: 1850.4507, y: 243.99872}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &128821652
 MonoBehaviour:
@@ -1301,8 +1275,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 62dc999544febb744bd5485d4be20d9f, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2036,6 +2010,173 @@ MonoBehaviour:
   startBudget: 5000
   currentBudget: 0
   budgetDisplay: {fileID: 1619436644}
+--- !u!1 &222845603
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 222845604}
+  - component: {fileID: 222845607}
+  - component: {fileID: 222845606}
+  - component: {fileID: 222845605}
+  - component: {fileID: 222845608}
+  m_Layer: 5
+  m_Name: End Text Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &222845604
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222845603}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1870831682}
+  m_Father: {fileID: 1605881661}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 765.79974, y: -184}
+  m_SizeDelta: {x: 312.25708, y: 97.24176}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &222845605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222845603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 222845606}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1406720221}
+        m_MethodName: ResetButtons
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1605881660}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 222845608}
+        m_MethodName: Advance
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &222845606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222845603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &222845607
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222845603}
+  m_CullTransparentMesh: 0
+--- !u!114 &222845608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222845603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff656541b8a2f2845809b3607f4ef519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reviewStage: 0
+  recapBehaviour: {fileID: 611547999}
 --- !u!1 &224249556
 GameObject:
   m_ObjectHideFlags: 0
@@ -3891,7 +4032,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &505758279
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4718,6 +4859,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601288952}
   m_CullTransparentMesh: 0
+--- !u!1 &603841363
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 603841364}
+  - component: {fileID: 603841366}
+  - component: {fileID: 603841365}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &603841364
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603841363}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 71698562}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &603841365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603841363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 35
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 201
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Continue
+--- !u!222 &603841366
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603841363}
+  m_CullTransparentMesh: 0
 --- !u!1 &611547997
 GameObject:
   m_ObjectHideFlags: 0
@@ -4727,6 +4946,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 611547998}
+  - component: {fileID: 611547999}
   m_Layer: 5
   m_Name: Recap Screen
   m_TagString: Untagged
@@ -4759,6 +4979,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &611547999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611547997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1e8d8e59cb97c94b8c9487a8ea2c971, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meetingDesignPlan: {fileID: 1688149023}
+  recapDialogue: {fileID: 1406720222}
+  reviewStage: 0
+  clientLikesIdeation: 0
+  clientLikesTargetAud: 0
+  clientLikesStory: 0
+  clientLikesArt: 0
+  clientLikesSound: 0
 --- !u!1 &615554717
 GameObject:
   m_ObjectHideFlags: 0
@@ -5034,40 +5274,40 @@ MonoBehaviour:
   isAttending: 0
   art: {fileID: 460589011}
   ideationIdeas:
-  - idea: It is important to keep the marketing budget as low as possible.
+  - idea: '"It is important to keep the marketing budget as low as possible."'
     designDocEntry: Low Budget
     appealsToClient: 1
-    clientResponse: Absolutely! I have spent so much money building this thing! I
-      can't sell another kidney to invest in marketing.
+    clientResponse: 'Ivan: Absolutely! I have spent so much money building this thing!
+      I can''t sell another kidney to invest in marketing.'
   targetIdeas:
-  - idea: Time travel needs to be accessible to everyone! We need to make a part
-      of people's everyday lives! So we need to focus on regular, common people,
+  - idea: '"Time travel needs to be accessible to everyone! We need to make a part
+      of people''s everyday lives! So we need to focus on regular, common people,
       you know? Especially young people, who are more adventurous and curious about
-      technology.
+      technology."'
     designDocEntry: Everyone
     appealsToClient: 1
-    clientResponse: Yes! Time travel should become the next Internet. Whatever that
-      means.
+    clientResponse: 'Ivan: Yes! Time travel should become the next Internet. Whatever
+      that means.'
   storyIdeas:
-  - idea: I would like to see a story of a youngster who always dreamed of traveling
-      in time and now can finally fulfill that dream.
+  - idea: '"I would like to see a story of a youngster who always dreamed of traveling
+      in time and now can finally fulfill that dream."'
     designDocEntry: Dream
     appealsToClient: 1
-    clientResponse: That's a beautiful story if I say so myself! I think I'm about
-      to cry. (The youngster is basically me.)
+    clientResponse: 'Ivan: That''s a beautiful story if I say so myself! I think
+      I''m about to cry. (The youngster is basically me.)'
   artIdeas:
-  - idea: Art style? You're doing the design, so it's up to you decide!
+  - idea: '"Art style? You''re doing the design, so it''s up to you decide!"'
     designDocEntry: No Preference
     appealsToClient: 0
-    clientResponse: That wasn't a suggestion, I was just saying you people should
-      decide yourselves!
+    clientResponse: 'Ivan: That wasn''t a suggestion, I was just saying you people
+      should decide yourselves!'
   soundIdeas:
-  - idea: I don't have a preference here. As long as your suggestions are not too
-      terrrible.
+  - idea: '"I don''t have a preference here. As long as your suggestions are not
+      too terrrible."'
     designDocEntry: No Preference
     appealsToClient: 0
-    clientResponse: It's your call, but I do want a specific suggestion for the music
-      style.
+    clientResponse: 'Ivan: It''s your call, but I do want a specific suggestion for
+      the music style.'
 --- !u!114 &628197578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5694,6 +5934,80 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696904171}
   m_CullTransparentMesh: 0
+--- !u!1 &785648365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 785648366}
+  - component: {fileID: 785648369}
+  - component: {fileID: 785648368}
+  m_Layer: 5
+  m_Name: Art
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &785648366
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785648365}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 976962397}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 345, y: 743}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &785648368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785648365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 5992f4f345a503a418e2727f9ad0df76, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &785648369
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785648365}
+  m_CullTransparentMesh: 0
 --- !u!1 &794261430
 GameObject:
   m_ObjectHideFlags: 0
@@ -6300,7 +6614,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &852468978
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7139,7 +7453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meetingBehaviour: {fileID: 1959606929}
-  nextStage: 0
+  nextStage: 1
 --- !u!1 &953598571
 GameObject:
   m_ObjectHideFlags: 0
@@ -7396,7 +7710,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1435835302}
+  - {fileID: 785648366}
   m_Father: {fileID: 1846135838}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7421,43 +7735,44 @@ MonoBehaviour:
   type: 0
   cost: 0
   isAttending: 0
-  art: {fileID: 1435835303}
+  art: {fileID: 0}
   ideationIdeas:
-  - idea: Well, the first step should always be to identify and analyze our competitors.
+  - idea: '"Well, the first step should always be to identify and analyze our competitors."'
     designDocEntry: Analyze Competition
     appealsToClient: 0
-    clientResponse: Are you insane? I have just invented a time machine! There are
-      no competitors, and if there were, I would go back in time and get rid of them!
+    clientResponse: 'Ivan: Are you insane? I have just invented a time machine! There
+      are no competitors, and if there were, I would go back in time and get rid
+      of them!'
   targetIdeas:
-  - idea: I think we should aim to appeal to upper-middle-class clients who can afford
-      this technology and make time travel a part of their lifestyle.
+  - idea: '"I think we should aim to appeal to upper-middle-class clients who can
+      afford this technology and make time travel a part of their lifestyle."'
     designDocEntry: Upper Middle Class
     appealsToClient: 0
-    clientResponse: I'm not going to pander to vain, wealthy bastards with their
-      fancy villas and sports cars and... and whatever it is that rich people do!
-      None of them would give me a loan when I approached them asking to fund my
-      project.
+    clientResponse: 'Ivan: I''m not going to pander to vain, wealthy bastards with
+      their fancy villas and sports cars and... and whatever it is that rich people
+      do! None of them would give me a loan when I approached them asking to fund
+      my project.'
   storyIdeas:
-  - idea: I think we should focus on how time travel can offer us new experiences
+  - idea: '"I think we should focus on how time travel can offer us new experiences
       and help us cope with the stress of everyday life. You know, like Eat, Pray,
-      Love... with time travel.
+      Love... with time travel."'
     designDocEntry: Eat, Pray, Love, Time Travel
     appealsToClient: 0
-    clientResponse: What kind of bourgeois nonsense is that?
+    clientResponse: 'Ivan: What kind of bourgeois nonsense is that?'
   artIdeas:
-  - idea: Something slick, functional, and professional-looking. Visually impressive
-      stock footage with minimal graphics.
+  - idea: '"Something slick, functional, and professional-looking. Visually impressive
+      stock footage with minimal graphics."'
     designDocEntry: Stock Footage
     appealsToClient: 1
-    clientResponse: Using stock footage would be cheaper than creating something
-      from scratch, right? If so, I'm all for it.
+    clientResponse: 'Ivan: Using stock footage would be cheaper than creating something
+      from scratch, right? If so, I''m all for it.'
   soundIdeas:
-  - idea: Some nice, unobtrusive corporate music.
+  - idea: '"Some nice, unobtrusive corporate music."'
     designDocEntry: Corporate
     appealsToClient: 0
-    clientResponse: You mean like the trash they play in shopping malls and on customer
-      services phone lines when they put you on hold for hours? I hate that with
-      a passion!
+    clientResponse: 'Ivan: You mean like the trash they play in shopping malls and
+      on customer services phone lines when they put you on hold for hours? I hate
+      that with a passion!'
 --- !u!114 &976962399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7742,7 +8057,7 @@ GameObject:
   - component: {fileID: 1015870297}
   - component: {fileID: 1015870296}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: Title Ideation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7938,46 +8253,46 @@ MonoBehaviour:
   isAttending: 0
   art: {fileID: 1000107157}
   ideationIdeas:
-  - idea: We could organize a lottery where people could win a chance to travel in
-      time for free or at a discount!
+  - idea: '"We could organize a lottery where people could win a chance to travel
+      in time for free or at a discount!"'
     designDocEntry: Lottery
     appealsToClient: 0
-    clientResponse: I hate lotteries! I stopped playing at age nine, after I calculated
-      how tiny my odds of winning were. I want to have an honest business and not
-      be associated with gambling.
+    clientResponse: 'Ivan: I hate lotteries! I stopped playing at age nine, after
+      I calculated how tiny my odds of winning were. I want to have an honest business
+      and not be associated with gambling.'
   targetIdeas:
-  - idea: Maybe people who would like to fix their past mistakes? Like, I really
-      regret getting that Pikachu tattoo when I was 17.
+  - idea: '"Maybe people who would like to fix their past mistakes? Like, I really
+      regret getting that Pikachu tattoo when I was 17."'
     designDocEntry: People Wanting to Fix Past Mistakes
     appealsToClient: 0
-    clientResponse: No way am I allowing people to change the past, especially for
-      such a trivial reason!
+    clientResponse: 'Ivan: No way am I allowing people to change the past, especially
+      for such a trivial reason!'
   storyIdeas:
-  - idea: How about a manga about time criminals being chased by time police, but
-      the criminals are actually the good guys, and there's a global time conspiracy,
+  - idea: '"How about a manga about time criminals being chased by time police, but
+      the criminals are actually the good guys, and there''s a global time conspiracy,
       and the police are working for a secret society that seeks to make time go
-      backwards?
+      backwards?"'
     designDocEntry: Manga About Time Criminals
     appealsToClient: 0
-    clientResponse: "I can't make head nor tail of this! What message will that send
-      to my customers? That if they travel in time, they will be hunted down by a
-      secret organization? And I don't understand how the fruit is relevant\u2014did
+    clientResponse: "Ivan: I can't make head nor tail of this! What message will
+      that send to my customers? That if they travel in time, they will be hunted
+      down by a secret organization? And I don't understand how the fruit is relevant\u2014did
       you say it was a mango?"
   artIdeas:
-  - idea: Manga! You know, like Japanese-style comics? Anime? Hayao Miyazaki? Here,
+  - idea: '"Manga! You know, like Japanese-style comics? Anime? Hayao Miyazaki? Here,
       let me show you. [Produces a smartphone and shows an anime character on the
-      screen.]
+      screen.]"'
     designDocEntry: Anime Style
     appealsToClient: 1
-    clientResponse: This looks like something for kids. But I don't mind. It's kids
-      that convince their parents to buy stuff most of the time.
+    clientResponse: 'Ivan: This looks like something for kids. But I don''t mind.
+      It''s kids that convince their parents to buy stuff most of the time.'
   soundIdeas:
-  - idea: J-pop rules! Here, listen to this. [Produces a phone and starts playing
-      J-pop.]
+  - idea: '"J-pop rules! Here, listen to this. [Produces a phone and starts playing
+      J-pop.]"'
     designDocEntry: J-Pop
     appealsToClient: 0
-    clientResponse: Stop this, this is terrible! No way are we using that music of
-      nightmares to promote my invention.
+    clientResponse: 'Ivan: Stop this, this is terrible! No way are we using that
+      music of nightmares to promote my invention.'
 --- !u!114 &1024730291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8247,7 +8562,6 @@ RectTransform:
   - {fileID: 1255246632}
   - {fileID: 119855713}
   - {fileID: 2125744911}
-  - {fileID: 110736969}
   m_Father: {fileID: 1554091914}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11085,6 +11399,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1406720220}
   - component: {fileID: 1406720221}
+  - component: {fileID: 1406720222}
   m_Layer: 5
   m_Name: Dialogue
   m_TagString: Untagged
@@ -11119,15 +11434,86 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406720219}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 569bc647f59b61940a8c1ec2a9475f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  continueTextButton: {fileID: 0}
-  endScreenButton: {fileID: 0}
-  textDisplay: {fileID: 0}
-  dialoguePanel: {fileID: 0}
+  continueTextButton: {fileID: 71698561}
+  endScreenButton: {fileID: 222845603}
+  textDisplay: {fileID: 593513263}
+  dialoguePanel: {fileID: 1605881660}
+--- !u!114 &1406720222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406720219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 146ce8704322feb4ea8dccd45fafc6fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBehaviour: {fileID: 1406720221}
+  introNoClient:
+  - 'Ivan: So how did your meeting go?'
+  - 'You: I think it went well! We have created a concept that I would like your
+    input on. So, for starters, we came up with a basic idea, which is (and I quote):'
+  outroNoClient:
+  - 'Ivan: What a load of rubbish! You''re wasting my time. Again. I can''t pay you
+    for coming up with bad ideas. So I''m just going to rewind to this morning and
+    see if you can come up with something better.'
+  - 'You: Wait what, you''ve been rewinding time to avoid paying us? You bas-'
+  introWithClient:
+  - 'Ivan: Alright, so give me a recap of the meeting.'
+  - 'You: Let''s see what we''ve got. So first of all, we came up with a basic idea,
+    which is (and I quote):'
+  outroAngryClient:
+  - 'Ivan: Well, this is getting better, but it still needs work. Due to budget constraints,
+    I have to go back in time and we''ll start over.'
+  - 'You: What are you saying? You''ve been rewinding ti-'
+  outroHappyClient:
+  - 'Ivan: You know what, I actually like this! I feel like I will soon be selling
+    my Samovar of Ti- I mean, my time machine. I was about to give up on this whole
+    marketing idea, but we created something nice in the end.'
+  - 'You: What do you mean, you were about to give up? We have only had one meeting!'
+  - 'Ivan: Yes, of course, never mind. Point is, you did a great job and I think
+    I''ll even pay you this time.'
+  - 'You: "This time"?..'
+  - 'Ivan: Never mind.'
+  targetAudDebrief: 'You: We also decided who we would like to aim the campaign at.
+    Let me read it out to you:'
+  storyDebrief: 'You: Okay. Well, I''m sure you''re going to like our story idea.
+    This is what we came up with:'
+  artDebrief: 'You: We also discussed the visual style for the project. Here it is:'
+  soundDebrief: 'You: And finally, we also covered the sound design and settled on
+    the following:'
+  ideation:
+    idea: 
+    designDocEntry: 
+    appealsToClient: 0
+    clientResponse: 
+  targetAudience:
+    idea: 
+    designDocEntry: 
+    appealsToClient: 0
+    clientResponse: 
+  story:
+    idea: 
+    designDocEntry: 
+    appealsToClient: 0
+    clientResponse: 
+  art:
+    idea: 
+    designDocEntry: 
+    appealsToClient: 0
+    clientResponse: 
+  sound:
+    idea: 
+    designDocEntry: 
+    appealsToClient: 0
+    clientResponse: 
 --- !u!1 &1419712572
 GameObject:
   m_ObjectHideFlags: 0
@@ -11280,80 +11666,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1428909059}
   m_CullTransparentMesh: 0
---- !u!1 &1435835301
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1435835302}
-  - component: {fileID: 1435835304}
-  - component: {fileID: 1435835303}
-  m_Layer: 5
-  m_Name: Art
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1435835302
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1435835301}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 976962397}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 345, y: 743}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1435835303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1435835301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5992f4f345a503a418e2727f9ad0df76, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1435835304
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1435835301}
-  m_CullTransparentMesh: 0
 --- !u!1 &1435902956
 GameObject:
   m_ObjectHideFlags: 0
@@ -11410,44 +11722,44 @@ MonoBehaviour:
   isAttending: 0
   art: {fileID: 150646681}
   ideationIdeas:
-  - idea: I believe we should focus on time travel as a service, not time machine
+  - idea: '"I believe we should focus on time travel as a service, not time machine
       as a tool. That way, we prevent the technology from being misused and we can
-      continue working on improving the customer experience.
+      continue working on improving the customer experience."'
     designDocEntry: Time Travel as a Service
     appealsToClient: 1
-    clientResponse: I like this! Having control is always good.
+    clientResponse: 'Ivan: I like this! Having control is always good.'
   targetIdeas:
-  - idea: I'm absolutely convinced there is a big market for time tourists who would
-      like to explore famous sights from the past. I personally would die to see
-      the Hanging Gardens of Babylon!
+  - idea: '"I''m absolutely convinced there is a big market for time tourists who
+      would like to explore famous sights from the past. I personally would die to
+      see the Hanging Gardens of Babylon!"'
     designDocEntry: Tourists
     appealsToClient: 0
-    clientResponse: Oh, and you could die quite literally. The gardens belonged to
-      queen Semiramis you know, do you think she would be happy about tourists roaming
-      the grounds? Tourists are bad enough in this day and age, I don't want to be
-      complicit in ruining the ancient world as well.
+    clientResponse: 'Ivan: Oh, and you could die quite literally. The gardens belonged
+      to queen Semiramis you know, do you think she would be happy about tourists
+      roaming the grounds? Tourists are bad enough in this day and age, I don''t
+      want to be complicit in ruining the ancient world as well.'
   storyIdeas:
-  - idea: Maybe the story of going back in time to meet a loved one you lost and
-      say your final goodbyes properly?
+  - idea: '"Maybe the story of going back in time to meet a loved one you lost and
+      say your final goodbyes properly?"'
     designDocEntry: Meeting a Loved One You Lost
     appealsToClient: 1
-    clientResponse: Well, I hadn't thought of that but... it sounds like a powerful
-      story. We wouldn't allow that in real life, of course, or people would start
-      trying to change the past to save those people.
+    clientResponse: 'Ivan: Well, I hadn''t thought of that but... it sounds like
+      a powerful story. We wouldn''t allow that in real life, of course, or people
+      would start trying to change the past to save those people.'
   artIdeas:
-  - idea: Um, you guys are going to think I'm weird but... how about a 60s-style
+  - idea: '"Um, you guys are going to think I''m weird but... how about a 60s-style
       psychedelic vibe? You know, bright colors, trippy caleidoscopic patterns, hallucinatory
-      effects...
+      effects..."'
     designDocEntry: 60s Psychedelic
     appealsToClient: 0
-    clientResponse: You're right. I now think you're weird. We're promoting a time
-      machine, not an LSD alternative. (Although I might try creating that later
-      if the time machine thing doesn't work out.)
+    clientResponse: 'Ivan: You''re right. I now think you''re weird. We''re promoting
+      a time machine, not an LSD alternative. (Although I might try creating that
+      later if the time machine thing doesn''t work out.)'
   soundIdeas:
-  - idea: How about something funky with a nice beat and groove and sliding guitar?
+  - idea: '"How about something funky with a nice beat and groove and sliding guitar?"'
     designDocEntry: Funk
     appealsToClient: 1
-    clientResponse: Hmm, that could work.
+    clientResponse: 'Ivan: Hmm, that could work.'
 --- !u!114 &1435902959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12551,7 +12863,7 @@ GameObject:
   - component: {fileID: 1582312329}
   - component: {fileID: 1582312328}
   m_Layer: 5
-  m_Name: Text (6)
+  m_Name: Title Art
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12634,7 +12946,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1605881661
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12647,6 +12959,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 593513262}
+  - {fileID: 71698562}
+  - {fileID: 222845604}
   m_Father: {fileID: 1406720220}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12668,7 +12982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.8235294}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.9411765}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -13385,7 +13699,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 76
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -13989,7 +14303,7 @@ GameObject:
   - component: {fileID: 1764203016}
   - component: {fileID: 1764203015}
   m_Layer: 5
-  m_Name: Text (5)
+  m_Name: Title Story
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14912,7 +15226,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Restart Game
+  m_Text: Play Again
 --- !u!222 &1849640217
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15228,6 +15542,84 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870779670}
+  m_CullTransparentMesh: 0
+--- !u!1 &1870831681
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1870831682}
+  - component: {fileID: 1870831684}
+  - component: {fileID: 1870831683}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1870831682
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870831681}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 222845604}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1870831683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870831681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 35
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 201
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Continue
+--- !u!222 &1870831684
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870831681}
   m_CullTransparentMesh: 0
 --- !u!1 &1871298716
 GameObject:
@@ -15825,7 +16217,7 @@ GameObject:
   - component: {fileID: 1935273736}
   - component: {fileID: 1935273735}
   m_Layer: 5
-  m_Name: Text (4)
+  m_Name: Title Target Aud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15981,7 +16373,7 @@ GameObject:
   - component: {fileID: 1957172697}
   - component: {fileID: 1957172696}
   m_Layer: 5
-  m_Name: Text (7)
+  m_Name: Title Sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16063,7 +16455,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1959606928
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16281,45 +16673,45 @@ MonoBehaviour:
   isAttending: 0
   art: {fileID: 2087160997}
   ideationIdeas:
-  - idea: I know you showed me a demonstration before the meeting, and I got to meet
-      my 13-year old self, but, physically speaking, time travel is impossible. Therefore,
-      what happened must have been something else. We must hold a large physicist
-      convention and discuss the implications of your invention. For all we know,
-      it may be unsafe for the user or even the world!
+  - idea: '"I know you showed me a demonstration before the meeting, and I got to
+      meet my 13-year old self, but, physically speaking, time travel is impossible.
+      Therefore, what happened must have been something else. We must hold a large
+      physicist convention and discuss the implications of your invention. For all
+      we know, it may be unsafe for the user or even the world!"'
     designDocEntry: Study Time Travel
     appealsToClient: 0
-    clientResponse: Do you seriously expect me to show how my ground-breaking invention
-      works to a bunch of physicists hungry for their own Nobel prize? Also, the
-      safety of the machine is my concern, not yours.
+    clientResponse: 'Ivan: Do you seriously expect me to show how my ground-breaking
+      invention works to a bunch of physicists hungry for their own Nobel prize?
+      Also, the safety of the machine is my concern, not yours.'
   targetIdeas:
-  - idea: "I think this invention\u2014if it actually does what you say it does\u2014would
-      be extremely valuable for the scientific community!"
+  - idea: "\"I think this invention\u2014if it actually does what you say it does\u2014would
+      be extremely valuable for the scientific community!\""
     designDocEntry: Scientific Community
     appealsToClient: 0
-    clientResponse: I don't care about the scientific community! When I worked at
-      the Super Top Secret Physics Facility in Gorky-17, they all laughed at me after
-      seeing the blueprints for my invention. There is a much bigger market for this,
-      of people who don't dismiss work ideas too clever for them to understand!
+    clientResponse: 'Ivan: I don''t care about the scientific community! When I worked
+      at the Super Top Secret Physics Facility in Gorky-17, they all laughed at me
+      after seeing the blueprints for my invention. There is a much bigger market
+      for this, of people who don''t dismiss work ideas too clever for them to understand!'
   storyIdeas:
-  - idea: Do we really need a story? Can't we just publish a series of peer-reviewed
-      articles examining the potentialities and risks of time travel?
+  - idea: '"Do we really need a story? Can''t we just publish a series of peer-reviewed
+      articles examining the potentialities and risks of time travel?"'
     designDocEntry: Scientific Articles
     appealsToClient: 0
-    clientResponse: There are no risks! Well, very few. I mean, few major ones. And
-      also, who's going to read those boring articles?
+    clientResponse: 'Ivan: There are no risks! Well, very few. I mean, few major
+      ones. And also, who''s going to read those boring articles?'
   artIdeas:
-  - idea: You're asking me? Oh... how about ASCII text art? That would be impressive.
+  - idea: '"You''re asking me? Oh... how about ASCII text art? That would be impressive."'
     designDocEntry: ASCII Style
     appealsToClient: 0
-    clientResponse: Impressive for whom? It would scare off everybody but yourself
-      and your scientific mates. Is that what you're actually plotting?
+    clientResponse: 'Ivan: Impressive for whom? It would scare off everybody but
+      yourself and your scientific mates. Is that what you''re actually plotting?'
   soundIdeas:
-  - idea: Classical music is the only music I respect. It has universal appeal and
-      is so wonderfully mathematical. I would suggest Bach or maybe Haydn.
+  - idea: '"Classical music is the only music I respect. It has universal appeal
+      and is so wonderfully mathematical. I would suggest Bach or maybe Haydn."'
     designDocEntry: Classical
     appealsToClient: 1
-    clientResponse: For once, I actually agree with the Professor. I don't know about
-      "universal appeal," but classical music is, em... classy.
+    clientResponse: 'Ivan: For once, I actually agree with the Professor. I don''t
+      know about "universal appeal," but classical music is, em... classy.'
 --- !u!114 &1984699394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16423,7 +16815,7 @@ GameObject:
   - component: {fileID: 1992031661}
   - component: {fileID: 1992031660}
   m_Layer: 5
-  m_Name: Inv Button
+  m_Name: Close View Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16551,7 +16943,7 @@ GameObject:
   - component: {fileID: 2010381292}
   - component: {fileID: 2010381291}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Header
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17200,43 +17592,41 @@ MonoBehaviour:
   isAttending: 0
   art: {fileID: 224249558}
   ideationIdeas:
-  - idea: We can create a documentary show on time travel.  People would watch it,
-      understand how the thing works, and what the benefits are.
+  - idea: '"We can create a documentary show on time travel.  People would watch
+      it, understand how the thing works, and what the benefits are."'
     designDocEntry: Make a Documentary
     appealsToClient: 1
-    clientResponse: Hmm, I personally don't have time to watch TV but I can see how
-      that could work.
-  - idea: We would like to use your device for recording events that took place in
-      history.
-    designDocEntry: Record History
-    appealsToClient: 0
-    clientResponse: This isn't marketing. This is business.
+    clientResponse: 'Ivan: Hmm, I personally don''t have time to watch TV but I can
+      see how that could work.'
   targetIdeas:
-  - idea: The viewers of our History Today series would certainly be very interested
+  - idea: '"The viewers of our History Today series would certainly be very interested
       in exploring the possibilities of time travel to learn about major events in
-      world history.
+      world history."'
     designDocEntry: TV Audiences
     appealsToClient: 0
-    clientResponse: That's too narrow! Your four and a half viewers aren't enough
-      when this invention can change the lives of millions!
+    clientResponse: 'Ivan: That''s too narrow! Your four and a half viewers aren''t
+      enough when this invention can change the lives of millions!'
   storyIdeas:
-  - idea: We could focus on the life story of a famous historical figure. Say, Alexander
-      the Great, or Catherine of Aragon, or... um, Lenin?
+  - idea: '"We could focus on the life story of a famous historical figure. Say,
+      Alexander the Great, or Catherine of Aragon, or... um, Lenin?"'
     designDocEntry: Historical Figures
     appealsToClient: 0
-    clientResponse: I don't see how retelling history is connected to time travel.
+    clientResponse: 'Ivan: I don''t see how retelling history is connected to time
+      travel.'
   artIdeas:
-  - idea: Maybe a kind of romantic gothic style? You know, dark streets, ruins, majestic
-      haunted buildings, that kind of thing.
+  - idea: '"Maybe a kind of romantic gothic style? You know, dark streets, ruins,
+      majestic haunted buildings, that kind of thing."'
     designDocEntry: Romantic Gothic
     appealsToClient: 0
-    clientResponse: What, like in ghost stories? I don't want to scare people away!
+    clientResponse: 'Ivan: What, like in ghost stories? I don''t want to scare people
+      away!'
   soundIdeas:
-  - idea: Medieval music is the best! I'm especially partial to the Gregorian chant.
+  - idea: '"Medieval music is the best! I''m especially partial to the Gregorian
+      chant."'
     designDocEntry: Gregorian Chant
     appealsToClient: 0
-    clientResponse: Well, as it happens *I'm* not that partial to the Gregorian chant.
-      I think it might alienate some prospective clients.
+    clientResponse: 'Ivan: Well, as it happens *I''m* not that partial to the Gregorian
+      chant. I think it might alienate some prospective clients.'
 --- !u!114 &2111937644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17367,7 +17757,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -379}
+  m_AnchoredPosition: {x: 418, y: -336}
   m_SizeDelta: {x: 312.25708, y: 97.24176}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2125744912

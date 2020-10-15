@@ -4,17 +4,6 @@ using TMPro;
 
 public class DialogueBehaviour : MonoBehaviour
 {
-    // make this class a singleton
-    //#region Singleton
-    //public static DialogueBehaviour instance;
-
-    //private void Awake()
-    //{
-    //    if (instance == null)
-    //        instance = this;
-    //}
-    //#endregion
-
     public GameObject continueTextButton;
     public GameObject endScreenButton;
 
@@ -27,10 +16,12 @@ public class DialogueBehaviour : MonoBehaviour
     private string[] dialoguePieces;
     private int progressionIndex = 0;
 
-    private void Start()
+    private void OnEnable()
     {
-        //dialoguePanel.SetActive(false);
-        //ResetButtons();
+        if (endScreenButton.GetComponent<AdvanceFeedback>() != null)
+        {
+            endScreenButton.GetComponent<AdvanceFeedback>().reviewStage = ReviewStages.Intro;
+        }
     }
 
     public void AdvanceDialogue()
@@ -61,7 +52,6 @@ public class DialogueBehaviour : MonoBehaviour
 
     public void DisplayDialogue(string inDialogue)
     {
-
         // Display the dialogue box and text
         if (inDialogue != "")
         {
@@ -74,13 +64,9 @@ public class DialogueBehaviour : MonoBehaviour
 
     void EndDialogue()
     {
-        // ends the dialogue and hides the dialogue box
         progressionIndex = 0;   // reset the index for the next dialogue interaction
-        //Debug.Log("Dialogue has ended. Hiding Dialogue box");
-        //dialoguePanel.SetActive(false);
         endScreenButton.SetActive(true);
         continueTextButton.SetActive(false);
-        //onDialogueEnded?.Invoke();
     }
 
     public void ResetButtons()

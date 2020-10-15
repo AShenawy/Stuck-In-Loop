@@ -11,4 +11,12 @@ public struct Idea
     public bool appealsToClient;
     [TextArea(5,7)]
     public string clientResponse;
+
+    public void Clear()
+    {
+        idea = null;
+        designDocEntry = null;
+        appealsToClient = false;
+        clientResponse = null;
+    }
 }

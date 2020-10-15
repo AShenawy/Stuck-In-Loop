@@ -24,14 +24,13 @@ public class DesignPlan : MonoBehaviour, IPointerClickHandler
     private void OnEnable()
     {
         ClearSummaries();
+        ClearSavedIdeas();
     }
 
     // Start is called before the first frame update
     void Start()
     {
         submitButton.interactable = false;
-
-        ClearSummaries();
     }
 
     void ClearSummaries()
@@ -43,6 +42,16 @@ public class DesignPlan : MonoBehaviour, IPointerClickHandler
         soundSumm.text = "";
     }
 
+    void ClearSavedIdeas()
+    {
+        ideationIdea.Clear();
+        targetAudienceIdea.Clear();
+        storyIdea.Clear();
+        artIdea.Clear();
+        soundIdea.Clear();
+    }
+
+
     public void SaveIdea(Idea idea)
     {
         switch (meetingBehaviour.meetingStage)
@@ -50,35 +59,35 @@ public class DesignPlan : MonoBehaviour, IPointerClickHandler
             case MeetingStages.Ideation:
                 ideationIdea = idea;
                 ideationSumm.text = idea.designDocEntry;
-                submitButton.GetComponent<SubmitIdea>().nextStage = MeetingStages.TargetAudience;
+                submitButton.GetComponent<SubmitIdea>().UpdateNextStage(MeetingStages.TargetAudience);
                 submitButton.interactable = true;
                 break;
 
             case MeetingStages.TargetAudience:
                 targetAudienceIdea = idea;
                 targetSumm.text = idea.designDocEntry;
-                submitButton.GetComponent<SubmitIdea>().nextStage = MeetingStages.Story;
+                submitButton.GetComponent<SubmitIdea>().UpdateNextStage(MeetingStages.Story);
                 submitButton.interactable = true;
                 break;
 
             case MeetingStages.Story:
                 storyIdea = idea;
                 storySumm.text = idea.designDocEntry;
-                submitButton.GetComponent<SubmitIdea>().nextStage = MeetingStages.Art;
+                submitButton.GetComponent<SubmitIdea>().UpdateNextStage(MeetingStages.Art);
                 submitButton.interactable = true;
                 break;
 
             case MeetingStages.Art:
                 artIdea = idea;
                 artSumm.text = idea.designDocEntry;
-                submitButton.GetComponent<SubmitIdea>().nextStage = MeetingStages.Music;
+                submitButton.GetComponent<SubmitIdea>().UpdateNextStage(MeetingStages.Music);
                 submitButton.interactable = true;
                 break;
 
             case MeetingStages.Music:
                 soundIdea = idea;
                 soundSumm.text = idea.designDocEntry;
-                submitButton.GetComponent<SubmitIdea>().nextStage = MeetingStages.Conclusion;
+                submitButton.GetComponent<SubmitIdea>().UpdateNextStage(MeetingStages.Conclusion);
                 submitButton.interactable = true;
                 break;
 
