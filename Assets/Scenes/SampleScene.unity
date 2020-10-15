@@ -4662,8 +4662,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.11352539, y: -0.0002593994}
-  m_SizeDelta: {x: 0.22729492, y: -0.0017700195}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &593513263
 MonoBehaviour:
@@ -4750,7 +4750,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 13, y: 13, z: 31, w: 13}
+  m_margin: {x: 21, y: 21, z: 21, w: 21}
   m_textInfo:
     textComponent: {fileID: 593513263}
     characterCount: 18
@@ -5945,6 +5945,7 @@ GameObject:
   - component: {fileID: 785648366}
   - component: {fileID: 785648369}
   - component: {fileID: 785648368}
+  - component: {fileID: 785648367}
   m_Layer: 5
   m_Name: Art
   m_TagString: Untagged
@@ -5971,6 +5972,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 345, y: 743}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &785648367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785648365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e611d607423f11d4a9f8a62ec079498b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &785648368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7735,7 +7748,7 @@ MonoBehaviour:
   type: 0
   cost: 0
   isAttending: 0
-  art: {fileID: 0}
+  art: {fileID: 785648368}
   ideationIdeas:
   - idea: '"Well, the first step should always be to identify and analyze our competitors."'
     designDocEntry: Analyze Competition
@@ -12946,7 +12959,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1605881661
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13621,10 +13634,10 @@ RectTransform:
   m_Father: {fileID: 128821651}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.020565776, y: 0.25145862}
-  m_AnchorMax: {x: 0.98100007, y: 0.9467516}
-  m_AnchoredPosition: {x: -0.000061035156, y: -0.000045776367}
-  m_SizeDelta: {x: -0.00024414062, y: -0.000091552734}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1681948299
 MonoBehaviour:
@@ -13720,7 +13733,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 21, y: 21, z: 21, w: 21}
   m_textInfo:
     textComponent: {fileID: 1681948299}
     characterCount: 94
@@ -16455,7 +16468,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1959606928
 RectTransform:
   m_ObjectHideFlags: 0
